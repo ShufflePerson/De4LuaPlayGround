@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "git pull && mkdir scripts && node src/index.js",
+    "start": "git pull && mkdir scripts || node src/index.js",
     "build": "npm install && git clone https://github.com/ShufflePerson/De4Lua.git || git pull && cd De4Lua && npm install && npm run build && cd .. && npm run start"
   },
   "keywords": [],
