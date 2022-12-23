@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>De4Lua | PlayGround</title>
+</head>
+
+<body>
+    <form action="/deobfuscate" method="POST">
+        <div class="main">
+            <h1>De4Lua PlayGround</h1>
+            <p>Here you can play around wit De4Lua deobfuscator. </p>
+            <textarea name="code" id="code" cols="30" rows="10">
+local a = 1
+local b = 2
+local c = a + b
+local z = print
+z(c)
+if a == b then
+    print("I will be removed :(")
+end
+if a == 1 then
+    print("I will stay")
+end
+
+while 43*23-54 < 12/6*2-5 do 
+    print("I be removed!")
+end
+        </textarea>
+
+
+            <button type="submit" id="run">Deobfuscate</button>
+        </div>
+    </form>
+</body>
+
+</html>

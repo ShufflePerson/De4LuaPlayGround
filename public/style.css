@@ -1,0 +1,33 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 30px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+textarea {
+    resize:none;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: rgb(41, 41, 232);
+    color: white;
+    transition: all 250ms;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

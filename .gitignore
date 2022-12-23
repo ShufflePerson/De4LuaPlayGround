@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+dist
+
+
+# IDEs and editors
+.vscode
+
+
+package-lock.json
+
+
+scripts/*.lua
+De4Lua
