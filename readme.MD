@@ -9,9 +9,8 @@ Visit the [website](TO ADD) and paste your obfuscated script into the text area.
 ## How to host locally
 
 1. Clone the repository
-2. Run `npm install`
-3. Run `npm run build`
-4. Run `npm run start`
+2. Run `npm run build`
+3. Run `npm run start`
 
 ## Original De4Lua
 
