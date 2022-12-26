@@ -1,10 +1,10 @@
 # De4Lua Playground
 
-This is a playground for De4Lua, a deobfuscator for Lua scripts obfuscated with De4Dot.
+This is a playground for De4Lua.
 
 ## How to use
 
-Visit the [website](TO ADD) and paste your obfuscated script into the text area. Then click the `Deobfuscate` button. The deobfuscated script will be displayed in the text area below.
+Visit the [Playground](https://de4lua.art/) and paste your obfuscated script into the text area. Then click the `Deobfuscate` button. The deobfuscated script will show up on the next page.
 
 ## How to host locally
 
