@@ -1,6 +1,3 @@
-
-//express server which servers public folder
-
 const express = require('express');
 const child_process = require('child_process');
 const fs = require('fs');
@@ -33,9 +30,7 @@ async function deobfucasate(code, res) {
     try {
         child_process.execSync(`cd De4Lua && npm run start ../${input} ../${output}`)
         let deobfuscatedCode = fs.readFileSync(output, "utf-8")
-        //replace new lines with <br> so it can be displayed in html
         deobfuscatedCode = deobfuscatedCode.replace(/\n/g, "<br>")
-        //display "    " correctly
         deobfuscatedCode = deobfuscatedCode.replace(/    /g, "&nbsp;&nbsp;&nbsp;&nbsp;")
         res.send(deobfuscatedCode)
 
@@ -58,5 +53,5 @@ app.post('/deobfuscate', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`De4Lua Playground running at http://localhost:${port}`);
 });
